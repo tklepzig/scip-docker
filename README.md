@@ -5,8 +5,6 @@ Build with
 
 Run with
 
-    docker run -it scip
+    docker run -it --mount type=bind,source="$(pwd)"/code,target=/code scip
 
 Now you're in a bash, use scip as usual.
-
-TODO: Use volumes for zpl files.
